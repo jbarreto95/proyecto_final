@@ -1,0 +1,255 @@
+/*----------GENERAL----------*/
+* { margin:0; padding: 0; }
+body {
+    background-color: #D8BFD8;
+    font-size: 16px;
+    position: relative;
+    min-height: 100%;
+    margin: 10px auto
+    }
+ 
+/*----------TITULOS Y SUBTITULOS----------*/
+.titulos {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  padding: 14px 16px;
+}
+
+h1 {
+    display: flex;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  
+  h2 {
+    grid-area: titulos;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+  /*----------información----------*/
+  p {
+    text-align: left;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px 16px;
+    text-align: justify;
+  }
+  /*----------imagen----------*/
+  .imagen {
+    vertical-align: middle;
+    padding: 14px 16px;
+    width: 600px;
+    height: 300px;
+  }
+/*----------menú----------*/
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+    
+    li {
+        float: right;
+    }
+    
+    li a {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/*----------transiciones----------*/
+    .home1 {
+      transition:font-size 1s;
+    }
+    .home1:hover {
+      font-size: 20px;
+    }
+
+    .sobremi1 {
+      transition:font-size 1s;
+    }
+    .sobremi1:hover {
+      font-size: 20px;
+    }
+
+    .tratamiento1 {
+      transition:font-size 1s;
+    }
+    .tratamiento1:hover {
+      font-size: 20px;
+    }
+
+    .ubicacion1 {
+      transition:font-size 1s;
+    }
+    .ubicacion1:hover {
+      font-size: 20px;
+    }
+
+    .contacto1 {
+      transition:font-size 1s;
+    }
+    .contacto1:hover {
+      font-size: 20px;
+    }
+
+    .menu1{
+      background-image:linear-gradient(to right,#cea8bd,#9d6182)
+    }
+  /*----------PARTE INFERIOR----------*/
+  footer {
+    grid-area: pie;
+    background: #9D6182;
+    padding: 0;
+    color: white    ;
+    text-align: center;
+    margin: 0;
+  }
+  footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size:  12px;
+    text-align: center;
+  }
+/*----------FORMULARIO----------*/
+  label {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  fieldset {
+    width: 500px;
+    height: 380px;
+    padding: 14px 16px;
+  }
+
+  .fuente {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+/*----------TABLA----------*/
+    table, th, td {
+    border:1px solid black;
+    border-collapse:collapse;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px 16px;
+    text-align: left;
+  }
+  
+  .estructura {
+    padding: 14px 16px;
+  }
+/*----------flex----------*/
+  .imagen {
+    display: flex;
+    align-items: flex-start;
+  }
+  .imagen .parrafo {
+    flex: 1;
+    padding: 10px;
+  }
+  .lateral {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .menu1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/*----------grid----------*/
+.grid-template{
+  display: grid;
+  grid-template-areas: "titulos titulos"
+                       "imagen lateral"  
+                       "parrafo lateral"
+}
+
+.titulos { grid-area: titulos}
+.menu { grid-area: menu}
+.imagen { grid-area: imagen}
+.parrafo { grid-area: parrafo}
+.lateral { grid-area: lateral}
+
+/*----------media query----------*/
+@media screen and (min-width: 780px){
+  .encabezado{
+    width: 100%;
+    }
+  .titulos{
+      width: 100%;
+    }
+  .grid-template {
+      width: 75%;
+    }
+  }
+@media screen and (min-width: 480px) and  (max-width: 780px){ 
+  .titulos{
+    font-size: 250%;
+  }
+  .menu{
+    font-size: auto;
+    width: auto;
+  }
+  .menu1{
+    font-size: auto;
+    justify-content: flex-start;
+
+  }
+  .imagen{
+    width: auto;
+  }
+  .parrafo {
+    width: 100%;
+    font-size: auto;
+  }
+  .lateral{
+    visibility: hidden;
+  }
+  .pie{
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 480px){
+  .titulos{
+    font-size: auto;
+  }
+  .menu{
+    font-size: auto;
+    background-color:antiquewhite
+  }
+  .menu1{
+    font-size: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .imagen{
+    width: auto;
+  }
+  .parrafo {
+    width: auto;
+    font-size:auto;
+  }
+  .lateral{
+    visibility: hidden;
+  }
+  .pie{
+    font-size: 150%;
+  }
+}
