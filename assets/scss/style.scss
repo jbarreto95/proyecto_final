@@ -12,7 +12,18 @@
     min-height: 100%;
     margin: 10px auto;
   }
+
+/*----------mapp----------*/
   
+$color-blue: #0691bb;
+$color-red: #fa2010;
+$color-yellow: #f1ee0e;
+$color-green: #2cec0b;
+
+body {
+  color: $color-blue
+}
+
   /*----------TITULOS Y SUBTITULOS----------*/
   
   .titulos {
