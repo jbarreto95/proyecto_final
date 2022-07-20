@@ -24,6 +24,24 @@ body {
   color: $color-blue
 }
 
+/*----------extend----------*/
+
+%heading {
+  background-color: rgb(170, 117, 37);
+  color: brown;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  @extend %heading;
+  font-size: 2em;
+}
+
+h2 {
+  @extend %heading;
+  font-size: 1.5em;
+}
+
   /*----------TITULOS Y SUBTITULOS----------*/
   
   .titulos {
