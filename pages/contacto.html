@@ -18,32 +18,44 @@
 </head>
 <body>
 	<header>
-		<!--Licenciada Kimey Grosso-->
-		<h1 class="titulos">Lic. Kimey Grosso</h1>
-		<nav>
-		<!--Menú-->	
-			<ul class="menu1">
-				<li><a href="../Index.html">Home</a></li>
-				<li><a href="Sobre mi.html">Sobre mi</a></li>
-				<li><a href="Tratamientos.html">Tratamientos</a></li>
-				<li><a href="Ubicacion.html">Ubicación</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="../Index.html">Lic. Kimey Grosso</a>
+			<div id="menudesplegable" class="collapse navbar-collapse">
+			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+				  <a class="nav-link" href="../Index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Sobre%20mi.html">Sobre mi</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Tratamientos.html">Tratamientos</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Ubicacion.html">Ubicación</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+				</li>
+			  </ul>
+			</div>
 		</nav>
-	</header>
-	<section>
-	<h2 class="titulos">Contacto</h2>
-		<div>
-			<article>	
-				<img class="imagen" src="../assets/img/contacto.jpg" alt="contacto" height="30%" width="30%">			
-			</article>
+	  </header>
+	  <div class="container-fluid">
+		<div class="row">
+		  <div class="col-12">
+			<h2 class="d-flex justify-content-center">Sobre mí</h2>
+		  </div>
+		<div class="col-6"><img class="imagen" src="../assets/img/contacto.jpg" alt="contacto" height="30%" width="30%">
 		</div>			
-	</section>
+		<div class="container-fluid">
+			<div class="row">
+			  <div class="col-12">
+				<h3 class="d-flex justify-content-center">Contactame vía email completando el formulario</h3>
+			</div>
 	<section>
-		<h3 class="titulos">Contactame vía email completando el formulario</h3>
-	</section>
-	<section>
-		<article>
+		<div class="col-12">
 			<!--Formulario de contacto-->
 			<form class="estructura" action="Gracias por contactarse con Kimey Grosso">
 				<fieldset> 
@@ -59,13 +71,10 @@
 				</label>
 				<br /><br />
 				<label for="Edad">Edad:
-					<input type="number" placeholder="Edad" name="Edad"><br>
-				<br /><br />	
+					<input type="number" placeholder="Edad" name="Edad">
 				<label for="Mensaje"> Mensaje:
-				<br /><br />
 					<textarea class="estructura" placeholder="Mensaje"></textarea>
 				</label>
-				<br /><br />
 				<div>Sexo:</div>
 					<div>Hombre
 						<input type="radio" name="sexo" value="Hombre">
@@ -73,15 +82,16 @@
 					<div>Mujer
 						<input type="radio" name="sexo" value="Mujer">
 					</div>
-					<br /><br />
 				</select>
 				<input type="submit" value="ENVIAR">
 				<input type="reset" value="CANCELAR">
 			</form>
-		</article>
+		</div>
 	</section>
-	<footer>
-		<p>&#169 Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
-	</footer>
+	<div class="col-12">
+		<footer>
+		  <p class="parrafo">© Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
+		</footer>
+	</div>
 </body>
 </html>

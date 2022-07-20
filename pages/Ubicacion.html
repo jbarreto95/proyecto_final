@@ -17,34 +17,46 @@
 
 </head>
 <body>
-	<div id= "wrapper">
 	<header>
-		<!--Licenciada Kimey Grosso-->
-		<h1 class="titulos">Lic. Kimey Grosso</h1>
-		<nav>
-		<!--Menú-->
-			<ul class="menu1">
-                <li><a href="../Index.html">Home</a></li>
-				<li><a href="Sobre mi.html">Sobre mi</a></li>
-				<li><a href="Tratamientos.html">Tratamientos</a></li>
-				<li><a href="Ubicacion.html">Ubicación</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="../Index.html">Lic. Kimey Grosso</a>
+			<div id="menudesplegable" class="collapse navbar-collapse">
+			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+				  <a class="nav-link" href="../Index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Sobre%20mi.html">Sobre mi</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Tratamientos.html">Tratamientos</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="./pages/Ubicacion.html">Ubicación</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
 		</nav>
-	</header>
-	<div id="cuerpo">
-		<h2 class="titulos">Ubicación</h2>
-	</div>
-		<div>
-			<div class="imagen">
-			<span><img class="imagen" src="../assets/img/ubicacion.jpg" alt="ubicacion"	height="30%" width="30%"/></span>
+	  </header>
+	  <div class="container-fluid">
+		<div class="row">
+		  <div class="col-12">
+			<h2 class="d-flex justify-content-center">Ubicación</h2>
+		  </div>
+			<div class="col-6"><img class="imagen" src="../assets/img/ubicacion.jpg" alt="ubicacion"	height="30%" width="30%"/></span>
 	<!--Mi ubicación-->
-			<div>
+			<div class="col-6">
 				<p class="parrafo">Ciudad: Sunchales, Santa Fe, Argentina</p><br><p class="parrafo">Dirección: Cortada Mendoza 682</p></br>
 			</div>
 		</div>		
-	<footer>
-		<p>&#169 Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
-	</footer>
+		<div class="col-12">
+		<footer>
+			<p class="parrafo">© Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
+		</footer>
 </body>
 </html>

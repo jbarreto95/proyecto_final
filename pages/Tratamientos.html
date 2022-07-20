@@ -17,25 +17,37 @@
 
 </head>
 <body>
-	<div id= "wrapper">
-	<header id="Encabezado">
-		<!--Licenciada Kimey Grosso-->
-		<h1 class="titulos">Lic. Kimey Grosso</h1>
-		<nav>
-		<!--Menú-->	
-			<ul class="menu1">
-				<li><a href="../Index.html">Home</a></li>
-				<li><a href="Sobre mi.html">Sobre mi</a></li>
-				<li><a href="Tratamientos.html">Tratamientos</a></li>
-				<li><a href="Ubicacion.html">Ubicación</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="../Index.html">Lic. Kimey Grosso</a>
+			<div id="menudesplegable" class="collapse navbar-collapse">
+			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+				  <a class="nav-link" href="../Index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Sobre%20mi.html">Sobre mi</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="./pages/Tratamientos.html">Tratamientos</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Ubicacion.html">Ubicación</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
 		</nav>
-	</header>
-	<div id="cuerpo">
-		<h2 class="titulos">Tipos de tratamientos kinesiologicos</h2>
-	</div>
-	<section>
+	  </header>
+	  <div class="container-fluid">
+		<div class="row">
+		  <div class="col-12">
+			<h2 class="d-flex justify-content-center">Tipos de tratamientos kinesiologicos</h2>
+		  </div>
 		<div>
 			<article>
 				<!--Video informativo-->	
@@ -45,9 +57,11 @@
 	</section>
 	<main>
 		<section>
-			<article id="cuerpo">
+			<article class="container-fluid">
+				<div class="row">
+					<div class="col-6">
 			<!--Cuadro rehabilitación-->	
-				 	<h4>Entrenamientos de rehabilitación kinésica</h4>
+				 	<h4 class="d-flex justify-content-center">Entrenamientos de rehabilitación kinésica</h4>
 				<table>
 			   	<tr>
 				  	<th>Tipos de rehabilitación</th>
@@ -69,8 +83,10 @@
 			</article>
 		</section>
 	</main>	
+	<div class="col-12">
 	<footer id="pie">
 		<p>&#169 Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
 	</footer>
+	</div>
 </body>
 </html>
