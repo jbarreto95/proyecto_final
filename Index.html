@@ -6,63 +6,111 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Sitio oficial de Licenciada Kimey Grosso">
 	<meta name="keyword" content="Kinesiologia, Licenciada, Kimey Grosso, rehabilitación, recuperación, tratamientos">
-	<link rel="shortcut icon" href="assets/img/iconok.png">
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/estilo.css"/>
-	<link rel="stylesheet" href="./assets/css/main.css"/>
+	<link rel="shortcut icon" href="assets/img/logo-removebg-preview.png">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <script src="./assets/bootstrap/js/jquery.slim.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/estilo.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
 	<title>Kimey Grosso</title>
-
 </head>
 <body>
-	<header>
-	  <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="Index.html">Lic. Kimey Grosso</a>
-		  <div id="menudesplegable" class="collapse navbar-collapse">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			  <li class="nav-item active">
-				<a class="nav-link" href="Index.html">Home</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="pages/Sobre%20mi.html">Sobre mi</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="pages/Tratamientos.html">Tratamientos</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="pages/Ubicacion.html">Ubicación</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="pages/Contacto.html">Contacto</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
-	</header><!--Datos kinesiología-->
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-12">
-		  <h2 class="d-flex justify-content-center">Kinesiología y Fisiatría</h2>
-		</div>
-		<div class="col-6"><img src="./assets/img/kinesiologia.jpg" class="img-fluid" alt="Responsive image"></div>
-		<div class="col-6">
-		  <p class="parrafo">Kimey Grosso Consultorio te ofrecemos mejorar tu calidad de vida a través de una amplia variedad de tratamientos y terapias de rehabilitación kinesiológica, fisioterapia, cardiorespiratoria y deportiva.</p>
-		  <p class="parrafo">Kinesiología y la rehabilitación cumplen un rol fundamental en la etapa de recuperación de los pacientes, ya que permite alcanzar el más completo potencial físico e intenta restablecer la capacidad funcional, restaurar la salud y mejorar la calidad de vida.</p>
-		</div>
-		<div class="col-6">
-		  <p class="parrafo">Como en cualquier área de la salud, el kinesiólogo debe contar con cualidades como paciencia, sensibilidad y empatía, ya que su principal función es el contacto humano</p>
-		</div>
-		<div class="col-6"><img src="./assets/img/kinesio.jpg" class="img-fluid" alt="Responsive image"></div><!--Footer-->
-		<div class="col-12">
-		  <footer>
-			<p class="parrafo">© Copyright 2022 Kimey Grosso. Todos los derechos reservados.</p>
-		  </footer>
-		</div>
-	  </div>
-	</div>
-  </body>
-  </html>
+    <!-- Comienza header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg_nav-oscuro">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-removebg-preview.png" width="70px" height="65px" alt="Logo k">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/Sobre%20mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/Tratamientos.html">Tratamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/estetica.html">Estética</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Comienza main -->
+    <main>
+        <div class="cuerpo_index">
+            <h1>Licenciada en kinesiología y fisiatría Kimey Grosso</h1>
+        </div>
+
+        <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="home_info">
+            <div class="home_info-img"> <img src="assets/img/kinesiologia.jpg" alt="Nosotros"></div>
+            <div class="home_info-img1"> <img src="assets/img/especialidades_kinesiologia_.jpg" alt="Nosotros"></div>
+            <div class="home_info-text">
+                <h2>¿Qué ofrecemos?</h2>
+                <p>Kimey Grosso Consultorio te ofrecemos mejorar tu calidad de vida a través de una amplia variedad de tratamientos y terapias de rehabilitación kinesiológica, fisioterapia, cardiorespiratoria y deportiva.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <h2 class="h2_center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">Tu recuperación</h2>
+
+    <div class="card-tratamientos" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div class="cards">
+            <div class="card-image img-one"></div>
+            <div class="card_text">
+                <h2>Kinesiología</h2>
+                <p>La Kinesiología es una disciplina que estudia la actividad muscular del cuerpo humano y su relación con la salud. El objetivo que tiene es recuperar, mejorar y rehabilitar la capacidad física de las personas a través de diversas metodologías relacionadas al movimiento.</p>
+                <a href="pages/Tratamientos.html" class="button">Ver más</a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-image img-two"></div>
+            <div class="card_text">
+                <h2>Fisioterapia</h2>
+                <p>Es una disciplina de ciencias de la salud que ofrece tratamiento y rehabilitación física para diagnosticar, prevenir y tratar síntomas de múltiples patologías, tanto agudas como crónicas, por medio de ejercicios terapéuticos y agentes físicos como la electricidad, ultrasonido, láser, calor, frío, agua, técnicas manuales como estiramientos, tracciones, masoterapia.</p>
+                <a href="pages/Tratamientos.html" class="button">Ver más</a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-image img-three"></div>
+            <div class="card_text">
+                <h2>Presoterapia</h2>
+                <p>La presoterapia es una técnica que consiste en la aplicación de presión positiva, generada por un dispositivo, sobre diferentes zonas del cuerpo, con el objetivo de favorecer la circulación del flujo sanguíneo y linfático.</p>
+                <a href="pages/estetica.html" class="button">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comienza footer -->
+
+    <footer>
+        <img src="assets/img/logo-removebg-preview.png" alt="logo" class="footer_logo">
+        <div class="footer_redes">
+            <p>Seguinos en nuestras redes</p>
+            <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" target="_blank" class="fa-brands fa-twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook-f"></a>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fb468ee517.js" crossorigin="anonymous"></script>
+</body>
+</html>

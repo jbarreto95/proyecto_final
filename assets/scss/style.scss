@@ -1,309 +1,342 @@
-/*----------GENERAL----------*/
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #D8BFD8;
-    font-size: 16px;
-    position: relative;
-    min-height: 100%;
-    margin: 10px auto;
-  }
-
-/*----------mapp----------*/
-  
-$color-blue: #000000;
-$color-red: #fa2010;
-$color-yellow: #f1ee0e;
-$color-green: #2cec0b;
-
 body {
-  color: $color-blue
+  background-color: #dd9ab8;
+}
+.bg_nav-oscuro {
+  background-color: #bb68af
+}
+.nav-link {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: normal
 }
 
-/*----------extend----------*/
-
-%heading {
-  background-color: rgb(170, 117, 37);
-  color: brown;
-  font-family: 'Times New Roman', Times, serif;
+.navbar-dark .navbar-nav .nav-link {
+  color: white
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  border-bottom: solid 2px #e6b9cd
+}
+.navbar-toggler {
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.3rem
 }
 
+footer {
+  background-color: #bb68af;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr
+}
+footer img {
+  margin: 1.5rem
+}
+.footer_logo {
+  margin-top: 2rem;
+  height: 100px;
+  width: auto
+}
+.footer_redes {
+  margin: 2rem 1.5rem;
+  width: 16rem;
+  justify-self:end
+}
+.footer_redes p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center
+}
+.footer_redes a {
+  margin: 1rem;
+  position: relative;
+  left: 2rem;
+  font-size: 2rem;
+  text-decoration: none
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+a {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center
+}
 h1 {
-  @extend %heading;
-  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-family: 'Bebas Neue', cursive;
+  -webkit-text-stroke: 1px #000;
+  color: white;  
 }
-
 h2 {
-  @extend %heading;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 600;
+  font-size: 1.8rem
+}
+h3 {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 600;
+  font-size: 1.3rem
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem
+}
+.texto_negrita {
+  font-weight: bold
+}
+.cuerpo_index {
+  background-image: url(../img/kinesio.jpg);
+  min-height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center
+}
+.cuerpo_index h1 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 4.5rem;
+  clear: left;
+  top: 30%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 10px black;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+.home_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
+}
+.home_info-text {
+  width: 50%;
+  justify-items: center;
+  margin: 8% 7% 5% 3%
+}
+.home_info-text p {
+  font-size: 1rem
+}
+.home_info-img img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20%;
+  box-shadow: 0px 4px 8px 0px #000
+}
+.home_info-img1 img {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 20%;
+  box-shadow: 0px 4px 8px 0px #000
+}
+.card-tratamientos {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px
+}
+.cards {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px #000
 }
 
-  /*----------TITULOS Y SUBTITULOS----------*/
-  
-  .titulos {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    padding: 14px 16px;
-    text-decoration: underline;
+.card-body {
+  background-color: #fcdaf7;
+  box-shadow: 0px 4px 8px 0px #000
+}
+
+.cards .img-one {
+  background-image: url(../img/kinesiologiacard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.cards .img-two {
+  background-image: url(../img/fisioterapiacard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.cards .img-three {
+  background-image: url(../img/presoterapia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}  
+.cards .img-derma {
+  background-image: url(../img/dermatofuncional.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}  
+.cards .img-estetica {
+  background-image: url(../img/kinesioterapiaestetica.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}  
+.card-image {
+  height: 225px
+}
+.card_text {
+  padding: 15px 10px;
+  text-align: center
+}
+.card_text h2 {
+  letter-spacing: 1.5px
+}
+.card_text p {
+  margin: 15px 0px;
+  font-size: 15px
+}
+.card_text a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: #6f6dff;
+  padding: 8px 15px
+}
+.card_text a:hover {
+  background-color: #0004ff;
+  color: white;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease
+}
+
+.front_contacto {
+  background-image: url(../img/contacto.jpg);
+  min-height: 60vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center
+}
+.front_contacto h1 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 4.5rem;
+  clear: left;
+  top: 30%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 10px black;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+.formulario form {
+  margin: 0 0 2rem 2rem
+}
+.formulario form button {
+  background-color: #0004ff;
+  color: white;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease
+}
+.btn {
+  margin-top: 1rem
+}
+@media only screen and (max-width: 992px) {
+  .nav-link {
+      font-size: 1rem;
+      padding: .7rem 1rem
   }
-  
-  h1 {
-    display: flex;
-    color: black;
-    text-align: left;
-    font-weight: bold;
-    font-size: 35px;
+  .bg_nav-oscuro {
+      z-index: 1
   }
-  
-  h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 24px;
-    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .nav-link {
+      font-size: 1rem;
+      padding: .7rem 1rem
   }
-  
-  h3 {
-    font-size: 20px;
+  .bg_nav-oscuro {
+      z-index: 1
   }
-  
-  h4 {
-    font-size: 14px;
-  }
-  
-  h5 {
-    font-size: 12px;
-  }
-  
-  /*----------información----------*/
-  
   p {
-    text-align: left;
-    line-height: 28px;
-    font-family: 'Roboto', sans-serif;
-    padding: 14px 16px;
-    text-align: justify;
+      font-size: 1rem
   }
-  
-  /*----------imagen----------*/
-  
-  .imagen {
-    vertical-align: middle;
-    padding: 14px 16px;
-    width: 600px;
-    height: 300px;
+  .h2_center {
+      font-size: 1.5rem;
+      text-align: center
   }
-  
-  /*----------menú----------*/
-  
-  ul {
-    list-style-type: none;
-    overflow: hidden;
+  .cuerpo_index h1 {
+      font-size: 3rem
   }
-  
-  li {
-    float: right;
-  
-    a {
-      display: block;
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  }
-  
-  /*----------transiciones----------*/
-  
-  .home1, .sobremi1, .tratamiento1, .ubicacion1, .contacto1 {
-    transition: font-size 1s;
-  
-    &:hover {
-      font-size: 20px;
-    }
-  }
-  
-  .menu1 {
-    background-image: linear-gradient(to right, #cea8bd, #9d6182);
-  }
-  
-  /*----------PARTE INFERIOR----------*/
-  
-  footer {
-    grid-area: pie;
-    background: #9D6182;
-    padding: 0;
-    color: white;
-    text-align: center;
-    margin: 0;
-  
-    p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 12px;
-      text-align: center;
-    }
-  }
-  
-  /*----------FORMULARIO----------*/
-  
-  label {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  fieldset {
-    width: 500px;
-    height: 380px;
-    padding: 14px 16px;
-  }
-  
-  .fuente {
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /*----------TABLA----------*/
-  
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;
-    padding: 14px 16px;
-    text-align: left;
-  }
-  
-  .estructura {
-    padding: 14px 16px;
-  }
-  
-  /*----------flex----------*/
-  
-  .imagen {
-    display: flex;
-    align-items: flex-start;
-  
-    .parrafo {
-      flex: 1;
-      padding: 10px;
-    }
-  }
-  
-  .lateral {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .menu1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  /*----------grid----------*/
-  
-  .grid-template {
-    display: grid;
-    grid-template-areas: "titulos titulos" "imagen lateral" "parrafo lateral";
-  }
-  
-  .titulos {
-    grid-area: titulos;
-  }
-  
-  .menu {
-    grid-area: menu;
-  }
-  
-  .imagen {
-    grid-area: imagen;
-  }
-  
-  .parrafo {
-    grid-area: parrafo;
-  }
-  
-  .lateral {
-    grid-area: lateral;
-  }
-  
-  /*----------media query----------*/
-  @media screen and (min-width: 780px) {
-    .encabezado, .titulos {
-      width: 100%;
-    }
-  
-    .grid-template {
-      width: 75%;
-    }
-  }
-  
-  @media screen and (min-width: 480px) and (max-width: 780px) {
-    .titulos {
-      font-size: 250%;
-    }
-  
-    .menu {
-      font-size: auto;
-      width: auto;
-    }
-  
-    .menu1 {
-      font-size: auto;
-      justify-content: flex-start;
-    }
-  
-    .imagen {
-      width: auto;
-    }
-  
-    .parrafo {
-      width: 100%;
-      font-size: auto;
-    }
-  
-    .lateral {
-      visibility: hidden;
-    }
-  
-    .pie {
-      font-size: 150%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .titulos {
-      font-size: auto;
-    }
-  
-    .menu {
-      font-size: auto;
-      background-color: antiquewhite;
-    }
-  
-    .menu1 {
-      font-size: auto;
-      justify-content: flex-start;
+  .home_info {
+      display: flex;
       flex-direction: column;
-    }
-  
-    .imagen {
-      width: auto;
-    }
-  
-    .parrafo {
-      width: auto;
-      font-size: auto;
-    }
-  
-    .lateral {
-      visibility: hidden;
-    }
-  
-    .pie {
-      font-size: 150%;
-    }
+      justify-content: flex-start
   }
+  .home_info-img img {
+      margin-left: 3%;
+      width: 93%
+  }
+  .home_info-text {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%
+  }
+  footer {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr
+  }
+  .footer_logo {
+      justify-self: center;
+      margin: 4rem 0rem 0rem 0rem
+  }
+  .footer_redes {
+      justify-self: center
+  }
+  }
+  .portada_contacto h1 {
+      font-size: 3rem
+  }
+@media screen and (max-width: 576px) {
+  p {
+      font-size: 1rem
+  }
+  .front_tratamiento h1 {
+      font-size: 2.3rem
+  }
+  .front_contacto h1 {
+      font-size: 2.3rem
+  }
+}

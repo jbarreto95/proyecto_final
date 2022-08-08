@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +18,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
 	<title>Kimey Grosso</title>
 </head>
-
 <body>
-
     <!-- Comienza header -->
-    
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg_nav-oscuro">
             <a class="navbar-brand" href="../index.html">
@@ -44,68 +42,42 @@
                         <a class="nav-link" href="../pages/Tratamientos.html">Tratamientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/estetica.html">Estética</a>
+                        <a class="nav-link" href="./pages/estetica.html">Estética</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-	<!-- Comienza main -->
+	<h1 class="h1_center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">Kinesiología estética</h1>
 
-    <main>
-        <div class="front_contacto">
-            <h1>Contacto</h1>
-        </div>
-
-        <h2>¿Dónde ubicarnos?</h2>
-        <section class="formulario">
-            <div>
+    <div class="card-tratamientos" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div class="cards">
+            <div class="card-image img-derma"></div>
+            <div class="card_text">
+                <h2>Kinesiología dermatofuncional</h2>
+                <p>Cuando hablamos de kinesiología dermatofuncional, hablamos de la recuperación de la función normal de
+                    la piel. DERMATOFUNCIONAL es una evolución del concepto de “Kinesiología Estética”, muy relacionado
+                    a la belleza y que no diferencia lo que hacemos los Kinesiólogos.</p>
             </div>
-            <article>
-                <b>Direccion:</b>
-                <p>Ctda Mendoza 682, Sunchales Argentina</p>
-                <b>Telefono:</b>
-                <p>3493 - 409931</p>
-                <b>EMAIL:</b>
-                <p>kimeygrosso@consultorio.com.ar</p>
-            </article>
-            <div>
-                <form action="#" method="post">
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Apellido">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <input type="email" class="form-control needs-validation" id="exampleFormControlInput1" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <select class="custom-select">
-                            <option selected>Seleccionar motivos</option>
-                            <option value="1">Lesión muscular</option>
-                            <option value="2">Lesión respiratoria</option>
-                            <option value="3">Estética</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Enviar
-                    </button>
-                </form>
-        </section>
-    </main>
+        </div>
+        <div class="cards">
+            <div class="card-image img-estetica"></div>
+            <div class="card_text">
+                <h2>Kinesioterapia Estética</h2>
+                <p>Es una especialidad de la kinesiología que puede actuar antes o después de cualquier tipo de cirugía 
+                    o agresión del tejido epitelial, o en su defecto, actuando directamente sobre el tejido sano epitelial 
+                    para mejorar su calidad y salud. Su objetivo de aplicación está relacionado estrechamente con que el paciente
+                    disfrute de una mejor salud y belleza estética en su cuerpo.</p>
+            </div>
+        </div>
+        </div>
+    </div>
 
-<!-- Comienza footer -->
+	<!-- Comienza footer -->
 
 <footer>
 	<img src="../assets/img/logo-removebg-preview.png" alt="logo" class="footer_logo">
@@ -116,6 +88,11 @@
 		<a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook-f"></a>
 	</div>
 </footer>
+<!-- Bootstrap -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 <!-- FontAwesome -->
 <script src="https://kit.fontawesome.com/fb468ee517.js" crossorigin="anonymous"></script>
 </body>
